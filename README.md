@@ -15,6 +15,7 @@ HC05 Configuration
 ![FTDI - HC05](https://github.com/Marchanjo/AndroidRemoteControlCar/blob/main/Hardware/FTDI-HC05.jpg)
 
 Connections:
+
 FTDI 5v  - 5v BT
 
 FTDI GND - GND BT
@@ -22,6 +23,8 @@ FTDI GND - GND BT
 FTDI TX  - RX BT(My FTDI cable provide 3,3v logic) 
 
 FTDI RX  - TX BT(My FTDI cable provide 3,3v logic) 
+
+
 
 You need to hold the push button in HC05 while power-on (just during the power-on)
 
@@ -37,11 +40,15 @@ Parity: None
 Stop bits: 1 bit
 
 Some serial terminals need ASCII Setup:
+
 Send line ends with line feeds
+
 Echo typed characters locally
 
 
+
 First Step: Return to original Configurations
+---------------------------------------------
 
 AT  
 
@@ -54,7 +61,8 @@ OK
 AT+RESET
 
 
-Second Step: Cofigure
+Second Step: Configuration (name and Baud rate 115200)
+------------------------------------------------------
 
 Power-off and hold the push button in HC05 while power-on again.
 Connect with 96000 Baud rate (my HC05 change to this)
