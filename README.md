@@ -7,11 +7,6 @@ The complete Android App project is available in  [ControleM](https://github.com
 *Mounting:*
 ![Mounting](https://github.com/Marchanjo/AndroidRemoteControlCar/blob/main/Hardware/01-Promicro-L298-HC05_bb.jpg)
 
-*Front:*
-![Front](https://github.com/Marchanjo/AndroidRemoteControlCar/blob/main/Hardware/front.jpg)
-
-*Back:*
-![Back](https://github.com/Marchanjo/AndroidRemoteControlCar/blob/main/Hardware/back.jpg)
 
 HC05 Configuration
 ------------------
@@ -19,7 +14,7 @@ HC05 Configuration
 *FTDI - HC05:*
 ![FTDI - HC05](https://github.com/Marchanjo/AndroidRemoteControlCar/blob/main/Hardware/FTDI-HC05.jpg)
 
-Conections:
+Connections:
 FTDI 5v  - 5v BT
 FTDI GND - GND BT
 FTDI TX  - RX BT(My FTDI cable provide 3,3v logic) 
@@ -35,7 +30,7 @@ Stop bits: 1 bit
 
 Some terminals need ASCII Setup:
 Send line ends with line feeds
-Echo typed characteres locally
+Echo typed characters locally
 
 First Part:
 
@@ -47,7 +42,9 @@ AT+RESET
 
 Power-off and hold the push button in HC05 while power-on again.
 
-My HC05 default configuration:
+
+My HC05 configuration:
+
 AT+VERSION
 VERSION:3.0-20170601
 OK
@@ -60,12 +57,10 @@ OK
 AT+UART
 +UART:9600,0,0
 OK
----
 
 AT+UART=115200,0,0
 AT+NAME=MagicBot01
 
----
 AT+VERSION
 VERSION:3.0-20170601
 OK
@@ -78,3 +73,11 @@ OK
 AT+UART
 +UART:115200,0,0
 OK
+
+Final Pictures
+--------------
+*Front:*
+![Front](https://github.com/Marchanjo/AndroidRemoteControlCar/blob/main/Hardware/front.jpg)
+
+*Back:*
+![Back](https://github.com/Marchanjo/AndroidRemoteControlCar/blob/main/Hardware/back.jpg)
