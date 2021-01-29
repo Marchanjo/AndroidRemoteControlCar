@@ -16,62 +16,102 @@ HC05 Configuration
 
 Connections:
 FTDI 5v  - 5v BT
+
 FTDI GND - GND BT
+
 FTDI TX  - RX BT(My FTDI cable provide 3,3v logic) 
+
 FTDI RX  - TX BT(My FTDI cable provide 3,3v logic) 
 
 You need to hold the push button in HC05 while power-on (just during the power-on)
 
+
 For my HC05 the default connection:
+
 Baud rate: 38400
+
 Data bits: 8
+
 Parity: None
+
 Stop bits: 1 bit
 
-Some terminals need ASCII Setup:
+Some serial terminals need ASCII Setup:
 Send line ends with line feeds
 Echo typed characters locally
 
-First Part:
+
+First Step: Return to original Configurations
 
 AT  
+
 OK
+
 AT+ORGL       
+
 OK 
+
 AT+RESET
 
-Power-off and hold the push button in HC05 while power-on again.
 
+Second Step: Cofigure
+
+Power-off and hold the push button in HC05 while power-on again.
+Connect with 96000 Baud rate (my HC05 change to this)
 
 My HC05 configuration:
 
 AT+VERSION
+
 VERSION:3.0-20170601
+
 OK
+
 AT+ADDR
+
 +ADDR:21:13:3CDE1
+
 OK
+
 AT+NAME
+
 +NAME:H-C-2010-06-01
+
 OK
+
 AT+UART
+
 +UART:9600,0,0
+
 OK
 
 AT+UART=115200,0,0
+
 AT+NAME=MagicBot01
 
+
 AT+VERSION
+
 VERSION:3.0-20170601
+
 OK
+
 AT+ADDR
+
 +ADDR:21:13:3CDE1
+
 OK
+
 AT+NAME
+
 +NAME:MagicBot01
+
 OK
+
 AT+UART
+
 +UART:115200,0,0
+
 OK
 
 Final Pictures
